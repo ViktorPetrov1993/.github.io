@@ -16,6 +16,7 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
 
+    <link rel="stylesheet" href="libs/glide/dist/css/glide.core.min.css">
     <link rel="stylesheet" href="css/main.css">
     <script src="libs/particles/particles.min.js"></script>
     <script src="js/script.js"></script>
@@ -797,10 +798,13 @@
 </section>
     
 
-    <script src="libs/glide/build/build.min.js"></script>
+    <script type="module" src="libs/glide/dist/glide.min.js"></script>
 
-    <script>
-        const slider = new Glide('.glide', {
+    <script type="module">
+        window.onload = function () {
+            particlesJS.load('particles-js', 'js/options.json')
+
+        new Glide('.glide', {
             perView: 4,
             type: 'carousel',
             focusAt:'center',
@@ -837,7 +841,7 @@
                 }
             },
         }).mount()
-
+        }
     </script>
 
 </body>

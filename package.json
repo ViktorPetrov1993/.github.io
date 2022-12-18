@@ -14,12 +14,11 @@
   "license": "ISC",
   "dependencies": {
     "@glidejs/glide": "^3.6.0",
-    "particles.js": "^2.0.0"
-  },
-  "devDependencies": {
+    "http-server": "^14.1.1",
     "npm-watch": "^0.11.0",
+    "particles.js": "^2.0.0",
     "sass": "^1.56.1",
-    "http-server": "^14.1.1"
+    "string-to-color": "^2.2.2"
   },
   "watch": {
     "scss": {
